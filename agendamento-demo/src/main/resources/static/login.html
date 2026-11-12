@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login do dono</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="topo">
+      <h1 id="nome-barbearia">Painel</h1>
+      <div class="poste" aria-hidden="true"><div class="poste-preenchido" style="width:100%;transition:none"></div></div>
+    </header>
+    <main>
+      <h2 style="margin-bottom:16px">Login do dono</h2>
+      <p><small>Na versão de demonstração, o login libera as rotas protegidas da API (agenda, clientes, folgas).</small></p>
+      <form id="form-login" novalidate style="margin-top:16px">
+        <div class="campo">
+          <label for="usuario">Usuário</label>
+          <input id="usuario" name="username" autocomplete="username" autocapitalize="none" required>
+        </div>
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input id="senha" name="password" type="password" autocomplete="current-password" required>
+        </div>
+        <p class="erro" id="erro-login" role="alert" hidden></p>
+        <button type="submit" class="botao" id="btn-entrar" style="width:100%">Entrar</button>
+      </form>
+      <p style="margin-top:20px"><a href="/" class="botao-texto">Ir para a página de agendamento</a></p>
+    </main>
+  </div>
+  <script src="/js/common.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>
